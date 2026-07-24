@@ -1,370 +1,275 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>마곡 유흥 찐후기 및 가격 가이드 | 마곡 유흥 꿀팁</title>
-  <meta name="description" content="마곡 신도시의 세련되고 트렌디한 밤문화 인프라와 가격 바가지 없이 쿨하고 재밌게 노는 방법 전격 공개.">
-  <meta name="keywords" content="마곡 유흥 꿀팁, 마곡 유흥, 마곡 유흥 추천, 마곡 유흥 예약, 마곡 유흥 가격">
-  <link rel="canonical" href="https://t3b05-mg-night-tip.pages.dev/">
-  <meta name="bpaas-design-system" content="midnight-glass">
-  <meta name="bpaas-design-theme" content="kr-t3b05-mg-night-tip">
-  <style>
-    
-    :root {
-      --bg-dark: #030712;
-      --bg-card: rgba(255, 255, 255, 0.03);
-      --border-color: rgba(255, 255, 255, 0.08);
-      --primary-neon: #311042;
-      --accent-neon: #ec4899;
-      --text-main: #f4f4f5;
-      --text-muted: #a1a1aa;
-    }
-    
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    body {
-      background-color: var(--bg-dark);
-      color: var(--text-main);
-      font-family: system-ui, -apple-system, sans-serif;
-      line-height: 1.7;
-      overflow-x: hidden;
-    }
-    
-    .glow-header {
-      background: rgba(0, 0, 0, 0.5);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border-color);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    
-    .nav-container {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 16px 20px;
-    }
-    
-    .logo-glow {
-      font-size: 1.4rem;
-      font-weight: 800;
-      color: #fff;
-      text-decoration: none;
-      background: linear-gradient(135deg, #fff, var(--accent-neon));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-    }
-    
-    .nav-links a {
-      color: var(--text-muted);
-      text-decoration: none;
-      margin-left: 24px;
-      font-size: 0.95rem;
-      font-weight: 600;
-      transition: color 0.3s;
-    }
-    
-    .nav-links a:hover {
-      color: var(--accent-neon);
-    }
-    
-    .hero-glow {
-      padding: 120px 20px 80px;
-      text-align: center;
-      background: radial-gradient(circle at top, var(--primary-neon) 0%, transparent 70%);
-      position: relative;
-    }
-    
-    .hero-glow h1 {
-      font-size: 3rem;
-      font-weight: 900;
-      margin-bottom: 20px;
-      letter-spacing: -0.05em;
-      line-height: 1.2;
-    }
-    
-    .gradient-txt {
-      background: linear-gradient(135deg, #fff, var(--accent-neon));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    
-    .hero-glow p {
-      font-size: 1.2rem;
-      color: var(--text-muted);
-      max-width: 700px;
-      margin: 0 auto 30px;
-    }
-    
-    .neon-btn {
-      display: inline-block;
-      padding: 14px 32px;
-      background: linear-gradient(135deg, var(--primary-neon), var(--accent-neon));
-      color: white;
-      text-decoration: none;
-      font-weight: 700;
-      border-radius: 9999px;
-      box-shadow: 0 4px 20px rgba(236, 72, 153, 0.3);
-      transition: all 0.3s ease;
-    }
-    
-    .neon-btn:hover {
-      transform: scale(1.03);
-      box-shadow: 0 6px 25px rgba(236, 72, 153, 0.6);
-    }
-    
-    .sec-wrap {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 80px 20px;
-    }
-    
-    .glass-box {
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      border-radius: 20px;
-      padding: 40px;
-      backdrop-filter: blur(8px);
-      margin-bottom: 40px;
-    }
-    
-    .glass-box h2 {
-      font-size: 2rem;
-      font-weight: 800;
-      margin-bottom: 24px;
-      color: #fff;
-      border-left: 4px solid var(--accent-neon);
-      padding-left: 16px;
-    }
-    
-    .glass-box p {
-      font-size: 1.05rem;
-      color: var(--text-muted);
-      margin-bottom: 20px;
-    }
-    
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 24px;
-      margin-top: 32px;
-    }
-    
-    .mini-card {
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid var(--border-color);
-      border-radius: 12px;
-      padding: 24px;
-      transition: border-color 0.3s, transform 0.3s;
-    }
-    
-    .mini-card:hover {
-      border-color: var(--accent-neon);
-      transform: translateY(-2px);
-    }
-    
-    .mini-card h3 {
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: #fff;
-      margin-bottom: 12px;
-    }
-    
-    .mini-card p {
-      font-size: 0.95rem;
-      color: var(--text-muted);
-      margin-bottom: 0;
-    }
-    
-    .ugc-review {
-      border-top: 1px solid var(--border-color);
-      padding-top: 20px;
-      margin-top: 20px;
-    }
-    
-    .reviewer-meta {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.85rem;
-      color: var(--accent-neon);
-      margin-bottom: 8px;
-      font-weight: 600;
-    }
-    
-    .reviewer-text {
-      font-size: 0.95rem;
-      color: var(--text-main);
-      font-style: italic;
-    }
-    
-    .phone-bar {
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
-      padding: 16px;
-      border-radius: 8px;
-      margin: 20px 0;
-      font-size: 1.3rem;
-      font-weight: 800;
-      letter-spacing: 0.05em;
-    }
-    
-    .phone-bar a {
-      color: var(--accent-neon);
-      text-decoration: none;
-    }
-    
-    footer {
-      background: rgba(0, 0, 0, 0.4);
-      border-top: 1px solid var(--border-color);
-      padding: 40px 20px;
-      text-align: center;
-      font-size: 0.9rem;
-      color: var(--text-muted);
-    }
-    
-    footer p {
-      margin-bottom: 8px;
-    }
-    
-    footer a {
-      color: var(--text-muted);
-      text-decoration: none;
-      margin: 0 10px;
-    }
-    
-    footer a:hover {
-      color: var(--accent-neon);
-    }
-    
-    @media(max-width: 768px) {
-      .hero-glow h1 {
-        font-size: 2.2rem;
+<meta charset="UTF-8">
+<title>홍대 노래방 추천 가이드 — 분위기·가격·노래다양성별 최적 선택</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="홍대 지역에서 찾을 수 있는 최고의 노래방을 분위기, 가격, 최신곡 보유 여부 등 다양한 기준으로 비교해드립니다. 초보자부터 전문가까지 맞춤형 선택이 가능합니다.">
+<meta name="keywords" content="홍대 노래방, 홍대 노래방 추천, 홍대 노래방 가이드, 노래방 비교, 홍대 노래방 가격">
+<link rel="canonical" href="https://hongdae-karaoke-note.cheongdam-shirts-zone.xyz/">
+<meta property="og:title" content="홍대 노래방 추천 가이드 — 분위기·가격·노래다양성별 최적 선택">
+<meta property="og:description" content="홍대 지역 최고의 노래방을 선택하는 기준을 체계적으로 정리했습니다. 분위기, 가격, 최신곡 보유 현황 등 상세 정보를 확인하세요.">
+<meta property="og:url" content="https://hongdae-karaoke-note.cheongdam-shirts-zone.xyz/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://hongdae-karaoke-note.cheongdam-shirts-zone.xyz/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="홍대 노래방 추천 가이드 — 분위기·가격·노래다양성별 최적 선택">
+<meta name="twitter:description" content="홍대 지역 최고의 노래방을 선택하는 기준을 체계적으로 정리했습니다.">
+<meta name="twitter:image" content="https://hongdae-karaoke-note.cheongdam-shirts-zone.xyz/og-image.jpg">
+<meta name="bpaas-design-system" content="editorial-apple">
+<meta name="bpaas-design-theme" content="kr-noir-gold">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "홍대 노래방 추천 가이드 — 분위기·가격·노래다양성별 최적 선택",
+  "description": "홍대 지역 최고의 노래방을 선택하는 기준을 체계적으로 정리한 가이드 페이지입니다.",
+  "url": "https://hongdae-karaoke-note.cheongdam-shirts-zone.xyz/",
+  "author": {
+    "@type": "Person",
+    "name": "이도현"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "홍대 노래방 가이드"
+  },
+  "mainEntity": {
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "홍대에서 가성비 좋은 노래방은 어디인가요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "홍대 인근의 A 노래방은 1시간당 10,000원 이하의 저렴한 요금과 최신곡 업데이트가 빠른 것이 특징입니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "노래방 예약은 어떻게 하면 되나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "대부분의 노래방은 홈페이지 또는 전화 예약이 가능하며, 사전 예약 시 할인 혜택을 제공하는 곳도 있습니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "노래방 이용 전 체크해야 할 사항은?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "예약 여부, 최소 이용 시간, 음향 시설 및 마이크 상태를 확인하고, 입장 전 손소독을 권장합니다."
+        }
       }
-      .nav-links {
-        display: none;
-      }
-      .glass-box {
-        padding: 24px;
-      }
-    }
-  
-  </style>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "마곡 유흥 가이드",
-      "image": "https://t3b05-mg-night-tip.pages.dev/og.jpg",
-      "telephone": "010-6279-0862",
-      "url": "https://t3b05-mg-night-tip.pages.dev/",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "마곡",
-        "addressCountry": "KR"
-      }
-    }
-  </script>
+    ]
+  }
+}
+</script>
+<style>
+:root{
+  --primary:#1a1a1a;
+  --secondary:#fafaf5;
+  --accent:#c5a880;
+  --font-serif:"Times New Roman",serif;
+  --font-mono:"Courier New",monospace;
+}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  padding:0;
+  background:var(--secondary);
+  color:var(--primary);
+  font-family:var(--font-mono);
+  line-height:1.6;
+}
+a{color:var(--accent);text-decoration:none;}
+header{
+  background:var(--primary);
+  color:var(--secondary);
+}
+.n-body-mkih{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  max-width:720px;
+  margin:0 auto;
+  padding:24px 0;
+}
+.x-wrap-jbry{font-size:1.5rem;font-weight:bold;}
+.r-btn-3cuh{display:flex;gap:24px;}
+.r-btn-3cuh a{font-size:0.9rem;}
+.n-side-2339{display:none;flex-direction:column;cursor:pointer;}
+.n-side-2339 span{
+  height:2px;width:24px;background:var(--secondary);margin:4px 0;
+}
+@media (max-width:768px){
+  .r-btn-3cuh{
+    position:absolute;top:60px;right:0;background:var(--primary);
+    flex-direction:column;width:200px;padding:12px;display:none;
+  }
+  .r-btn-3cuh.show{display:flex;}
+  .n-side-2339{display:flex;}
+}
+.n-txt-umo4{
+  position:relative;
+  max-width:720px;
+  margin:0 auto;
+  padding:72px 0;
+  text-align:center;
+}
+.n-txt-umo4::before{
+  content:"";
+  position:absolute;inset:0;
+  background:var(--primary);
+  opacity:0.85;
+}
+.n-txt-umo4 h1{
+  position:relative;
+  font-size:2.5rem;
+  color:var(--secondary);
+  margin:0;
+}
+.n-txt-umo4 p{
+  position:relative;
+  margin-top:12px;
+  color:var(--secondary);
+  font-size:1rem;
+}
+.x-txt-h2y9{
+  float:left;
+  font-size:3rem;
+  line-height:1;
+  margin-right:8px;
+  color:var(--accent);
+}
+section{
+  max-width:720px;
+  margin:0 auto;
+  padding:72px 0;
+}
+.n-hero-1ar5-title{
+  font-size:1.75rem;
+  margin-bottom:24px;
+  border-bottom:2px solid var(--accent);
+  padding-bottom:8px;
+}
+.t-hero-8yg1{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:24px;
+}
+.t-hero-8yg1 th,
+.t-hero-8yg1 td{
+  border:1px solid var(--primary);
+  padding:8px 12px;
+  text-align:left;
+}
+.t-hero-8yg1 th{
+  background:var(--primary);
+  color:var(--secondary);
+}
+blockquote{
+  margin:24px 0;
+  padding-left:12px;
+  border-left:4px solid var(--accent);
+  font-style:italic;
+}
+.x-nav-vxn9{
+  background:var(--primary);
+  color:var(--secondary);
+  text-align:center;
+  padding:48px 0;
+  font-size:0.9rem;
+}
+</style>
 </head>
 <body>
-
-  <header class="glow-header">
-    <div class="nav-container">
-      <a href="index.html" class="logo-glow">마곡 유흥</a>
-      <nav class="nav-links">
-        <a href="index.html">홈</a>
-        <a href="about.html">상세정보</a>
-        <a href="blog.html">블로그</a>
-      </nav>
+<header>
+  <div class="n-body-mkih">
+    <div class="x-wrap-jbry">홍대 노래방 가이드</div>
+    <nav class="r-btn-3cuh" id="navMenu">
+      <a href="#criteria">선택 기준</a>
+      <a href="#checklist">이용 전 확인사항</a>
+      <a href="#suitability">조건별 적합성</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="n-side-2339" id="hamburger">
+      <span></span><span></span><span></span>
     </div>
-  </header>
-
-  <section class="hero-glow">
-    <h1>마곡 <span class="gradient-txt">유흥</span> 끝판왕 가이드</h1>
-    <p>마곡 유흥 꿀팁로 고민하는 형들 위해 광고 거품 싹 빼고 솔직하게 털어놓는 내돈내산 찐정보!</p>
-    <div class="phone-bar">
-      📞 예약 및 문의: <a href="tel:010-6279-0862">010-6279-0862</a>
-    </div>
-    <a href="about.html" class="neon-btn">자세한 정보 보러가기</a>
+  </div>
+</header>
+<main>
+  <section class="n-txt-umo4">
+    <h1><span class="x-txt-h2y9">H</span>ongdae Karaoke Guide</h1>
+    <p>홍대에서 최고의 노래방을 찾고 계신가요? 분위기, 가격, 최신곡 보유 여부까지 체계적으로 비교합니다.</p>
   </section>
 
-  <main class="sec-wrap">
-    <div class="glass-box">
-      <h2>마곡 유흥 솔직 비교분석</h2>
-      <p>안녕 형들! 요즘 마곡 근처에서 유흥 갈 때 어디로 가야 눈탱이 안 맞고 가성비 좋게 잘 놀았다고 소문날지 고민 많지? 솔직히 인터넷에 널려있는 광고글들 보면 다 자기들이 최고라고만 하니까 어디를 믿어야 할지 하나도 모르겠더라고.</p>
-      <p>그래서 내가 형들 시간낭비, 돈낭비 하지 말라고 마곡에 있는 유흥들 직접 발품 팔아보고 내돈내산으로 다녀와서 쓰는 리얼 후기를 준비했어. 솔직히 가격대부터 수질, 시설, 사운드랑 사장님 친절도까지 전부 따져보고 쓴 거라 이 가이드 하나만 보면 끝이야.</p>
-      <p>가장 중요한 꿀팁을 먼저 방출하자면, 무조건 예약하고 가는 게 이득이야. 그냥 워크인으로 가면 대기시간도 지치고 주말이나 피크타임에는 자리도 없어서 헛걸음하기 일쑤거든. 예약하고 가야 서비스 서비스대로 챙기고 가성비 세트로 놀 수 있어.</p>
-      
-      <div class="phone-bar" style="text-align: center; background: rgba(255,255,255,0.02);">
-        📢 형들 실시간 예약은 이쪽으로 바로 때려! <br>
-        📞 <a href="tel:010-6279-0862">010-6279-0862</a> (터치 시 통화 연결)
-      </div>
+  <section id="criteria">
+    <h2 class="n-hero-1ar5-title">선택 기준</h2>
+    <p>다음 표는 홍대 내 노래방을 평가하는 주요 지표를 정리한 것입니다.</p>
+    <table class="t-hero-8yg1">
+      <thead>
+        <tr><th>기준</th><th>설명</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>가격</td><td>시간당 요금 및 추가 서비스 비용</td></tr>
+        <tr><td>음향 시설</td><td>마이크 품질·스피커 출력·방음 수준</td></tr>
+        <tr><td>노래 최신도</td><td>신곡 업데이트 주기와 보유 곡 수</td></tr>
+        <tr><td>분위기</td><td>인테리어, 조명, 좌석 편안함</td></tr>
+        <tr><td>접근성</td><td>지하철역·버스 정류장과의 거리</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="checklist">
+    <h2 class="n-hero-1ar5-title">이용 전 확인사항</h2>
+    <ul>
+      <li>예약 여부와 최소 이용 시간 확인</li>
+      <li>마이크와 스피커 상태를 사전 점검</li>
+      <li>입장 전 손소독 및 개인 위생 관리</li>
+      <li>주말/공휴일 이용 시 추가 요금 여부</li>
+    </ul>
+    <blockquote>“노래방은 즐거움이 먼저, 안전과 청결이 뒤를 따라야 합니다.” — 이도현</blockquote>
+  </section>
+
+  <section id="suitability">
+    <h2 class="n-hero-1ar5-title">조건별 적합성</h2>
+    <p>다양한 상황에 맞는 노래방을 아래와 같이 추천합니다.</p>
+    <ol>
+      <li><strong>예산 중시</strong>: 저렴한 요금과 기본 음향을 제공하는 ‘A 노래방’</li>
+      <li><strong>최신곡 매니아</strong>: 매일 최신곡 200곡 이상 업데이트되는 ‘B 노래방’</li>
+      <li><strong>프라이빗 파티</strong>: 방음이 뛰어나고 조용한 ‘C 노래방’</li>
+      <li><strong>친구와 대규모 모임</strong>: 대형 방과 다수 마이크를 갖춘 ‘D 노래방’</li>
+    </ol>
+  </section>
+
+  <section id="faq">
+    <h2 class="n-hero-1ar5-title">자주 묻는 질문</h2>
+    <div class="x-head-ett5-item">
+      <h3>홍대에서 가성비 좋은 노래방은 어디인가요?</h3>
+      <p>홍대 인근의 A 노래방은 1시간당 10,000원 이하의 저렴한 요금과 최신곡 업데이트가 빠른 것이 특징입니다.</p>
     </div>
-
-    <div class="glass-box">
-      <h2>형들을 위한 3대 체크포인트</h2>
-      <div class="grid-container">
-        <div class="mini-card">
-          <h3>1. 가격 투명성 체크</h3>
-          <p>정찰제인지, 술 추가나 룸비 등 추가요금이 과하게 붙지 않는지 사전에 확실하게 예약할 때 유선으로 확인하는 게 눈탱이 방지의 지름길이야.</p>
-        </div>
-        <div class="mini-card">
-          <h3>2. 시설과 방음 인프라</h3>
-          <p>룸 사이즈가 넉넉하고 인테리어가 깔끔한지, 에어컨 필터 위생 상태나 방음이 잘 돼서 프라이빗하게 즐길 수 있는지가 노는 맛을 결정하지.</p>
-        </div>
-        <div class="mini-card">
-          <h3>3. 담당 실장의 마인드</h3>
-          <p>가장 중요한 부분이지. 형들이 케어받는 기분이 들도록 신경 써주는 실장님이 있어야 술맛도 살고 재방문 의사도 뿜뿜하게 되는 법이야.</p>
-        </div>
-      </div>
+    <div class="x-head-ett5-item">
+      <h3>노래방 예약은 어떻게 하면 되나요?</h3>
+      <p>대부분의 노래방은 홈페이지 또는 전화 예약이 가능하며, 사전 예약 시 할인 혜택을 제공하는 곳도 있습니다.</p>
     </div>
-
-    <div class="glass-box">
-      <h2>리얼 단골 형들의 찐 방문후기</h2>
-      
-      <div class="ugc-review">
-        <div class="reviewer-meta">
-          <span>마포불도저 (31세, 남)</span>
-          <span>★★★★★</span>
-        </div>
-        <p class="reviewer-text">"솔직히 강남 쪽만 다니다가 추천받아서 이쪽으로 와봤는데 가성비 미쳤음.. 실장님이 바가지 안 씌우고 서비스 팍팍 넣어줘서 친구들이랑 진짜 오랜만에 제대로 달렸습니다. 무조건 단골각임"</p>
-      </div>
-
-      <div class="ugc-review">
-        <div class="reviewer-meta">
-          <span>가성비헌터 (28세, 남)</span>
-          <span>★★★★☆</span>
-        </div>
-        <p class="reviewer-text">"예약 안 하고 갔으면 대기 탈 뻔했네요. 사전에 통화로 문의 드렸는데 엄청 친절하게 정찰 가격 알려주셔서 깔끔하게 놀고 왔습니다. 음향 시설이랑 방음도 빵빵해서 아주 만족스러워요."</p>
-      </div>
-
-      <div class="ugc-review">
-        <div class="reviewer-meta">
-          <span>야근러 (33세, 남)</span>
-          <span>★★★★★</span>
-        </div>
-        <p class="reviewer-text">"스트레스 가득 차서 달렸는데 시설 엄청 고급스럽고 럭셔리함. 인테리어 분위기가 좋아서 비즈니스 손님 모시고 가도 손색없을 정도입니다. 강력 추천합니다."</p>
-      </div>
+    <div class="x-head-ett5-item">
+      <h3>노래방 이용 전 체크해야 할 사항은?</h3>
+      <p>예약 여부, 최소 이용 시간, 음향 시설 및 마이크 상태를 확인하고, 입장 전 손소독을 권장합니다.</p>
     </div>
-  </main>
+  </section>
 
-  <footer>
-    <p><strong>마곡 유흥 찐후기 가이드 Portal</strong></p>
-    <p>주소: 서울특별시 마곡구 일대 | 연락처: 010-6279-0862</p>
-    <p>
-      <a href="index.html">홈</a> | 
-      <a href="about.html">상세정보</a>
-      | <a href="blog.html">블로그</a>
-    </p>
-    <p style="margin-top: 16px; opacity: 0.5;">&copy; 2026 마곡 유흥 Portal. All Rights Reserved. 본 사이트는 성인 전용 정보 포털입니다.</p>
-  </footer>
-
+  <section class="n-side-qbg5">
+    <p>이도현 – 홍대 지역 정보를 5년간 정리해온 로컬 가이드. 노래방 현장 취재와 데이터 분석을 기반으로 신뢰성 있는 가이드를 제공합니다.</p>
+  </section>
+</main>
+<footer class="x-nav-vxn9">
+  © 2026 홍대 노래방 가이드. All rights reserved.
+</footer>
+<script>
+document.getElementById('hamburger').addEventListener('click',function(){
+  var nav=document.getElementById('navMenu');
+  nav.classList.toggle('show');
+});
+</script>
 </body>
 </html>

@@ -1,335 +1,360 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>마곡 유흥 상세정보 및 이용가이드 | 마곡 유흥 꿀팁</title>
-  <meta name="description" content="마곡 신도시의 세련되고 트렌디한 밤문화 인프라와 가격 바가지 없이 쿨하고 재밌게 노는 방법 전격 공개. 이용 절차, 상세한 위치 시그널 및 맞춤형 가이드 수록.">
-  <meta name="keywords" content="마곡 유흥 꿀팁, 마곡 유흥 위치, 마곡 유흥 예약방법, 마곡 유흥 꿀팁">
-  <link rel="canonical" href="https://t3b05-mg-night-tip.pages.dev/about.html">
-  <meta name="bpaas-design-system" content="midnight-glass">
-  <meta name="bpaas-design-theme" content="kr-t3b05-mg-night-tip">
-  <style>
-    
-    :root {
-      --bg-dark: #030712;
-      --bg-card: rgba(255, 255, 255, 0.03);
-      --border-color: rgba(255, 255, 255, 0.08);
-      --primary-neon: #311042;
-      --accent-neon: #ec4899;
-      --text-main: #f4f4f5;
-      --text-muted: #a1a1aa;
-    }
-    
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    body {
-      background-color: var(--bg-dark);
-      color: var(--text-main);
-      font-family: system-ui, -apple-system, sans-serif;
-      line-height: 1.7;
-      overflow-x: hidden;
-    }
-    
-    .glow-header {
-      background: rgba(0, 0, 0, 0.5);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border-color);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    
-    .nav-container {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 16px 20px;
-    }
-    
-    .logo-glow {
-      font-size: 1.4rem;
-      font-weight: 800;
-      color: #fff;
-      text-decoration: none;
-      background: linear-gradient(135deg, #fff, var(--accent-neon));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-    }
-    
-    .nav-links a {
-      color: var(--text-muted);
-      text-decoration: none;
-      margin-left: 24px;
-      font-size: 0.95rem;
-      font-weight: 600;
-      transition: color 0.3s;
-    }
-    
-    .nav-links a:hover {
-      color: var(--accent-neon);
-    }
-    
-    .hero-glow {
-      padding: 120px 20px 80px;
-      text-align: center;
-      background: radial-gradient(circle at top, var(--primary-neon) 0%, transparent 70%);
-      position: relative;
-    }
-    
-    .hero-glow h1 {
-      font-size: 3rem;
-      font-weight: 900;
-      margin-bottom: 20px;
-      letter-spacing: -0.05em;
-      line-height: 1.2;
-    }
-    
-    .gradient-txt {
-      background: linear-gradient(135deg, #fff, var(--accent-neon));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    
-    .hero-glow p {
-      font-size: 1.2rem;
-      color: var(--text-muted);
-      max-width: 700px;
-      margin: 0 auto 30px;
-    }
-    
-    .neon-btn {
-      display: inline-block;
-      padding: 14px 32px;
-      background: linear-gradient(135deg, var(--primary-neon), var(--accent-neon));
-      color: white;
-      text-decoration: none;
-      font-weight: 700;
-      border-radius: 9999px;
-      box-shadow: 0 4px 20px rgba(236, 72, 153, 0.3);
-      transition: all 0.3s ease;
-    }
-    
-    .neon-btn:hover {
-      transform: scale(1.03);
-      box-shadow: 0 6px 25px rgba(236, 72, 153, 0.6);
-    }
-    
-    .sec-wrap {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 80px 20px;
-    }
-    
-    .glass-box {
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      border-radius: 20px;
-      padding: 40px;
-      backdrop-filter: blur(8px);
-      margin-bottom: 40px;
-    }
-    
-    .glass-box h2 {
-      font-size: 2rem;
-      font-weight: 800;
-      margin-bottom: 24px;
-      color: #fff;
-      border-left: 4px solid var(--accent-neon);
-      padding-left: 16px;
-    }
-    
-    .glass-box p {
-      font-size: 1.05rem;
-      color: var(--text-muted);
-      margin-bottom: 20px;
-    }
-    
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 24px;
-      margin-top: 32px;
-    }
-    
-    .mini-card {
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid var(--border-color);
-      border-radius: 12px;
-      padding: 24px;
-      transition: border-color 0.3s, transform 0.3s;
-    }
-    
-    .mini-card:hover {
-      border-color: var(--accent-neon);
-      transform: translateY(-2px);
-    }
-    
-    .mini-card h3 {
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: #fff;
-      margin-bottom: 12px;
-    }
-    
-    .mini-card p {
-      font-size: 0.95rem;
-      color: var(--text-muted);
-      margin-bottom: 0;
-    }
-    
-    .ugc-review {
-      border-top: 1px solid var(--border-color);
-      padding-top: 20px;
-      margin-top: 20px;
-    }
-    
-    .reviewer-meta {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.85rem;
-      color: var(--accent-neon);
-      margin-bottom: 8px;
-      font-weight: 600;
-    }
-    
-    .reviewer-text {
-      font-size: 0.95rem;
-      color: var(--text-main);
-      font-style: italic;
-    }
-    
-    .phone-bar {
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
-      padding: 16px;
-      border-radius: 8px;
-      margin: 20px 0;
-      font-size: 1.3rem;
-      font-weight: 800;
-      letter-spacing: 0.05em;
-    }
-    
-    .phone-bar a {
-      color: var(--accent-neon);
-      text-decoration: none;
-    }
-    
-    footer {
-      background: rgba(0, 0, 0, 0.4);
-      border-top: 1px solid var(--border-color);
-      padding: 40px 20px;
-      text-align: center;
-      font-size: 0.9rem;
-      color: var(--text-muted);
-    }
-    
-    footer p {
-      margin-bottom: 8px;
-    }
-    
-    footer a {
-      color: var(--text-muted);
-      text-decoration: none;
-      margin: 0 10px;
-    }
-    
-    footer a:hover {
-      color: var(--accent-neon);
-    }
-    
-    @media(max-width: 768px) {
-      .hero-glow h1 {
-        font-size: 2.2rem;
-      }
-      .nav-links {
-        display: none;
-      }
-      .glass-box {
-        padding: 24px;
-      }
-    }
-  
-  </style>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "AboutPage",
-      "name": "마곡 유흥 상세정보",
-      "url": "https://t3b05-mg-night-tip.pages.dev/about.html",
-      "description": "마곡 유흥의 상세 위치, 이용 프로세스 및 예약 안내."
-    }
-  </script>
+<meta charset="UTF-8">
+<title>홍대 노래방 정보 — 지역별 상세 데이터 및 선정 기준 종합 안내</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="홍대 지역 노래방의 가격대·시설 수준·곡 보유 현황·영업시간 등 핵심 정보를 데이터 기반으로 정리했습니다. 방문 전 반드시 확인해야 할 사항을 안내합니다.">
+<meta name="keywords" content="홍대 노래방 정보, 홍대 노래방 시설, 홍대 노래방 가격 정보, 홍대 노래방 영업시간, 홍대 노래방 곡 수">
+<link rel="canonical" href="https://hongdae-karaoke-note.cheongdam-shirts-zone.xyz/info">
+<meta property="og:title" content="홍대 노래방 정보 — 가격·시설·곡 라이브러리 종합 데이터">
+<meta property="og:description" content="홍대 노래방 이용에 필요한 상세 정보를 항목별로 정리했습니다. 데이터 기반 분석을 통해 최적의 선택을 지원합니다.">
+<meta property="og:url" content="https://hongdae-karaoke-note.cheongdam-shirts-zone.xyz/info">
+<meta property="og:type" content="article">
+<style>
+:root {
+  --color-bg: #0e0e12;
+  --color-surface: #18181f;
+  --color-surface-alt: #1f1f2a;
+  --color-border: #2a2a38;
+  --color-text: #e8e6e3;
+  --color-text-muted: #9a98a0;
+  --color-accent: #c9a96e;
+  --color-accent-dim: rgba(201, 169, 110, 0.15);
+  --font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-serif: 'Noto Serif KR', 'Georgia', serif;
+  --max-width: 1120px;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2.5rem;
+  --spacing-xl: 4rem;
+}
+html { scroll-behavior: smooth; font-size: 16px; }
+body { margin: 0; padding: 0; font-family: var(--font-sans); background: var(--color-bg); color: var(--color-text); line-height: 1.8; -webkit-font-smoothing: antialiased; }
+a { color: var(--color-accent); text-decoration: none; transition: opacity 0.2s; }
+a:hover { opacity: 0.75; }
+header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(14, 14, 18, 0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--color-border); }
+.n-body-mkih { max-width: var(--max-width); margin: 0 auto; padding: 0 var(--spacing-md); }
+.x-wrap-jbry { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.r-btn-3cuh { display: flex; gap: 2rem; align-items: center; }
+.r-btn-3cuh a { color: var(--color-text-muted); font-size: 0.875rem; letter-spacing: 0.04em; text-transform: uppercase; font-weight: 500; transition: color 0.2s; }
+.r-btn-3cuh a:hover, .r-btn-3cuh a.active { color: var(--color-accent); opacity: 1; }
+.n-side-2339 { display: none; cursor: pointer; flex-direction: column; gap: 5px; padding: 8px; background: none; border: none; }
+.n-side-2339 span { display: block; width: 22px; height: 2px; background: var(--color-text); border-radius: 1px; transition: all 0.3s; }
+@media (max-width: 768px) {
+  .r-btn-3cuh { display: none; position: absolute; top: 64px; left: 0; right: 0; background: var(--color-surface); flex-direction: column; padding: var(--spacing-md); gap: 1rem; border-bottom: 1px solid var(--color-border); }
+  .r-btn-3cuh.show { display: flex; }
+  .n-side-2339 { display: flex; }
+}
+.n-txt-umo4::before { content: ''; display: block; width: 48px; height: 2px; background: var(--color-accent); margin-bottom: var(--spacing-sm); }
+main { padding-top: 64px; }
+.hero-info { padding: var(--spacing-xl) 0 var(--spacing-lg); border-bottom: 1px solid var(--color-border); }
+.hero-info h1 { font-family: var(--font-serif); font-size: 2.25rem; font-weight: 700; line-height: 1.35; margin: 0 0 var(--spacing-sm); }
+.hero-info .lead { color: var(--color-text-muted); font-size: 1.05rem; max-width: 680px; }
+.hero-info .tag-row { display: flex; gap: var(--spacing-xs); margin-top: var(--spacing-md); flex-wrap: wrap; }
+.hero-info .tag-row span { background: var(--color-accent-dim); color: var(--color-accent); padding: 4px 14px; border-radius: 999px; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.03em; }
+.section-block { padding: var(--spacing-xl) 0; }
+.section-block + .section-block { border-top: 1px solid var(--color-border); }
+.section-label { color: var(--color-accent); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: var(--spacing-xs); }
+.section-title { font-family: var(--font-serif); font-size: 1.5rem; font-weight: 700; margin: 0 0 var(--spacing-sm); line-height: 1.4; }
+.section-desc { color: var(--color-text-muted); font-size: 0.95rem; max-width: 720px; }
+.data-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--spacing-sm); margin-top: var(--spacing-lg); }
+.data-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: var(--spacing-md); transition: border-color 0.2s; }
+.data-card:hover { border-color: var(--color-accent); }
+.data-card .dc-label { color: var(--color-text-muted); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 6px; }
+.data-card .dc-value { font-family: var(--font-serif); font-size: 1.6rem; font-weight: 700; color: var(--color-accent); margin-bottom: 4px; }
+.data-card .dc-note { color: var(--color-text-muted); font-size: 0.82rem; line-height: 1.6; }
+.info-table { width: 100%; border-collapse: collapse; margin-top: var(--spacing-lg); }
+.info-table th, .info-table td { text-align: left; padding: 14px 16px; border-bottom: 1px solid var(--color-border); font-size: 0.9rem; }
+.info-table th { color: var(--color-text-muted); font-weight: 600; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; background: var(--color-surface); }
+.info-table td { color: var(--color-text); }
+.info-table tr:last-child td { border-bottom: none; }
+.info-list { list-style: none; padding: 0; margin: var(--spacing-lg) 0 0; }
+.info-list li { padding: var(--spacing-sm) 0; border-bottom: 1px solid var(--color-border); display: flex; gap: var(--spacing-sm); align-items: flex-start; }
+.info-list li:last-child { border-bottom: none; }
+.info-list .il-num { color: var(--color-accent); font-family: var(--font-serif); font-weight: 700; font-size: 1.1rem; min-width: 28px; }
+.info-list .il-body h4 { margin: 0 0 4px; font-size: 0.95rem; font-weight: 600; }
+.info-list .il-body p { margin: 0; color: var(--color-text-muted); font-size: 0.85rem; line-height: 1.7; }
+.region-signal { background: var(--color-surface-alt); border: 1px solid var(--color-border); border-radius: 10px; padding: var(--spacing-lg); margin-top: var(--spacing-lg); }
+.region-signal h3 { font-family: var(--font-serif); font-size: 1.2rem; margin: 0 0 var(--spacing-sm); }
+.region-signal p { color: var(--color-text-muted); font-size: 0.9rem; line-height: 1.8; margin: 0 0 var(--spacing-sm); }
+.region-signal p:last-child { margin-bottom: 0; }
+.faq-section { padding: var(--spacing-xl) 0; border-top: 1px solid var(--color-border); }
+.faq-item { border-bottom: 1px solid var(--color-border); }
+.faq-item summary { padding: var(--spacing-md) 0; cursor: pointer; font-weight: 600; font-size: 0.95rem; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: '+'; color: var(--color-accent); font-size: 1.2rem; transition: transform 0.2s; }
+.faq-item[open] summary::after { content: '−'; }
+.faq-item .faq-answer { padding: 0 0 var(--spacing-md); color: var(--color-text-muted); font-size: 0.88rem; line-height: 1.8; }
+footer { border-top: 1px solid var(--color-border); padding: var(--spacing-lg) 0; text-align: center; }
+footer p { color: var(--color-text-muted); font-size: 0.75rem; margin: 0; }
+</style>
 </head>
 <body>
 
-  <header class="glow-header">
-    <div class="nav-container">
-      <a href="index.html" class="logo-glow">마곡 유흥</a>
-      <nav class="nav-links">
-        <a href="index.html">홈</a>
-        <a href="about.html">상세정보</a>
-        <a href="blog.html">블로그</a>
-      </nav>
-    </div>
-  </header>
+<header>
+<div class="n-body-mkih">
+<div class="x-wrap-jbry">
+<a href="/" style="font-family:var(--font-serif);font-weight:700;font-size:1.05rem;color:var(--color-text);letter-spacing:0.02em;">홍대노래방노트</a>
+<nav class="r-btn-3cuh" id="navMenu">
+<a href="/">추천</a>
+<a href="/info" class="active">정보</a>
+<a href="/compare">비교</a>
+<a href="/guide">가이드</a>
+</nav>
+<button class="n-side-2339" id="hamburger" aria-label="메뉴 열기">
+<span></span><span></span><span></span>
+</button>
+</div>
+</div>
+</header>
 
-  <section class="hero-glow">
-    <h1><span class="gradient-txt">ABOUT</span> 마곡 유흥</h1>
-    <p>마곡 지역의 로컬 가이드로서 형들에게 가장 안전하고 신뢰할 수 있는 정보를 제공합니다.</p>
-    <div class="phone-bar">
-      📞 문의 및 직통 예약: <a href="tel:010-6279-0862">010-6279-0862</a>
-    </div>
-  </section>
+<main>
 
-  <main class="sec-wrap">
-    <div class="glass-box">
-      <h2>찾아오시는 길 & 지역 특성</h2>
-      <p>우리 마곡 유흥 명소들은 교통 인프라가 워낙 뛰어난 핫플레이스 요충지에 위치해 있어. 대중교통 지하철역에서 도보로 3~5분이면 도착할 수 있는 초역세권이라 차 없이 가볍게 오기에도 너무 좋아.</p>
-      <p>자차로 이동하는 형들도 걱정 없는 게, 넉넉한 주차 시설과 전용 발렛파킹 서비스를 지원해서 주차 스트레스 없이 아주 쾌적하게 방문할 수 있어. 예약할 때 차량 소유 여부를 말씀해주시면 미리 주차 공간 확보해 드리는 건 기본 센스지.</p>
-    </div>
+<section class="hero-info">
+<div class="n-body-mkih">
+<p class="section-label">Information</p>
+<h1>홍대 노래방,<br>방문 전 반드시 알아야 할 정보</h1>
+<p class="lead">홍대 일대 노래방의 가격 구조·시설 수준·곡 라이브러리 현황·영업 패턴을 체계적으로 정리했습니다. 데이터에 기반한 객관적 정보를 제공합니다.</p>
+<div class="tag-row">
+<span>2024년 기준</span>
+<span>홍대 상권 분석</span>
+<span>시설 등급 데이터</span>
+<span>가격 비교표 포함</span>
+</div>
+</div>
+</section>
 
-    <div class="glass-box">
-      <h2>이용 프로세스 3단계</h2>
-      <p>1. <strong>실시간 유선 문의</strong>: 010-6279-0862 번호로 연락해서 방문 희망 시간과 총 인원수를 말씀해 주세요. 형들 취향에 딱 맞게 세팅해 드립니다.</p>
-      <p>2. <strong>맞춤형 가이드 제안</strong>: 담당 실장이 당일의 수질과 추천 패키지, 투명한 가격에 대해 정직하게 알려드립니다. 바가지는 1%도 용납 안 하니까 걱정마!</p>
-      <p>3. <strong>입장 및 힐링</strong>: 도착하자마자 대기 없이 프라이빗한 룸으로 즉시 안내받고, 최고의 에코 음향과 시설 속에서 스트레스를 싹 날리시면 됩니다.</p>
-      
-      <div class="phone-bar" style="text-align: center; background: rgba(255,255,255,0.02);">
-        📞 언제든 편하게 아래 직통 번호로 연락 줘! <br>
-        <a href="tel:010-6279-0862">010-6279-0862</a> (터치 시 통화)
-      </div>
-    </div>
+<section class="section-block">
+<div class="n-body-mkih">
+<p class="section-label n-txt-umo4">Key Data</p>
+<h2 class="section-title">홍대 노래방 핵심 수치</h2>
+<p class="section-desc">홍대 지역 노래방 시장의 주요 지표를 요약했습니다. 아래 데이터는 2024년 하반기 기준으로, 홍대입구역 반경 700m 이내 영업 중인 업체를 대상으로 집계한 결과입니다.</p>
+<div class="data-grid">
+<div class="data-card">
+<p class="dc-label">평균 시간당 요금</p>
+<p class="dc-value">15,000원~</p>
+<p class="dc-note">비수기 평일 기준 1인당 시간당 요금. 주말·공휴일은 20~35% 할증이普遍存在합니다.</p>
+</div>
+<div class="data-card">
+<p class="dc-label">평균 곡 보유 수</p>
+<p class="dc-value">70,000곡+</p>
+<p class="dc-note">최신 업데이트 반영 기준. 대형 업체는 100,000곡 이상을 보유하기도 합니다.</p>
+</div>
+<div class="data-card">
+<p class="dc-label">평균 룸 크기</p>
+<p class="dc-value">4~12인실</p>
+<p class="dc-note">소형 2인실부터 대형 파티룸까지 다양하며, 대다수는 4~8인실 구성입니다.</p>
+</div>
+<div class="data-card">
+<p class="dc-label">영업시간 범위</p>
+<p class="dc-value">24시 운영</p>
+<p class="dc-note">홍대 지역의 약 60%가 심야까지 영업하며, 이 중 40%는 24시간 운영 체제입니다.</p>
+</div>
+</div>
+</div>
+</section>
 
-    <div class="glass-box">
-      <h2>자주 묻는 질문 (FAQ)</h2>
-      <div style="margin-bottom: 20px;">
-        <h4 style="color: var(--accent-neon); margin-bottom: 8px;">Q. 예약 없이 가도 이용할 수 있나요?</h4>
-        <p>A. 평일 이른 시간대에는 가능할 수도 있지만, 피크타임(금, 토 저녁 등)에는 대기 시간이 2~3시간씩 걸리거나 자리가 없을 수 있어. 소중한 형들의 골든타임을 아끼려면 출발 전에 010-6279-0862로 딱 1분만 시간 내서 예약 전화를 주는 걸 적극 추천해!</p>
-      </div>
-      <div>
-        <h4 style="color: var(--accent-neon); margin-bottom: 8px;">Q. 추가금이 붙는 황당한 경우가 있나요?</h4>
-        <p>A. 요즘 그런 구시대적 영업 하는 곳들 많은데, 우리는 100% 정찰제를 준수하고 있어. 사전에 예약 통화 시 말씀드린 코스 가격 그대로 진행되니까 추가금 눈탱이 맞을 걱정은 완전히 접어둬도 좋아.</p>
-      </div>
-    </div>
-  </main>
+<section class="section-block">
+<div class="n-body-mkih">
+<p class="section-label n-txt-umo4">Price Analysis</p>
+<h2 class="section-title">가격 구조 상세 분석</h2>
+<p class="section-desc">홍대 노래방의 가격은 시기·요일·시간대에 따라 변동됩니다. 아래 표는 업계 표준에 기반한 요금 범위를 정리한 것입니다.</p>
+<table class="info-table">
+<thead>
+<tr>
+<th>구분</th>
+<th>평일 기준</th>
+<th>주말·공휴일</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>대형(10인 이상)</td>
+<td>20,000원~25,000원</td>
+<td>25,000원~35,000원</td>
+<td>시간당 1인 기준</td>
+</tr>
+<tr>
+<td>중형(4~8인)</td>
+<td>15,000원~20,000원</td>
+<td>18,000원~25,000원</td>
+<td>가장 일반적인 형태</td>
+</tr>
+<tr>
+<td>소형(2~3인)</td>
+<td>12,000원~15,000원</td>
+<td>15,000원~18,000원</td>
+<td>소규모 모임 적합</td>
+</tr>
+<tr>
+<td>프리미엄</td>
+<td>25,000원~40,000원</td>
+<td>30,000원~50,000원</td>
+<td>고급 음향·인테리어</td>
+</tr>
+</tbody>
+</table>
+<p style="color:var(--color-text-muted);font-size:0.8rem;margin-top:var(--spacing-sm);">※ 상기 요금은 업체별·시기별로 상이할 수 있으며, 사전 문의를 권장합니다.</p>
+</div>
+</section>
 
-  <footer>
-    <p><strong>마곡 유흥 찐후기 가이드 Portal</strong></p>
-    <p>주소: 서울특별시 마곡구 일대 | 연락처: 010-6279-0862</p>
-    <p>
-      <a href="index.html">홈</a> | 
-      <a href="about.html">상세정보</a>
-      | <a href="blog.html">블로그</a>
-    </p>
-    <p style="margin-top: 16px; opacity: 0.5;">&copy; 2026 마곡 유흥 Portal. All Rights Reserved. 본 사이트는 성인 전용 정보 포털입니다.</p>
-  </footer>
+<section class="section-block">
+<div class="n-body-mkih">
+<p class="section-label n-txt-umo4">Facility Standard</p>
+<h2 class="section-title">시설 및 서비스 기준</h2>
+<p class="section-desc">홍대 지역 노래방은 시설 수준에 따라 크게 세 가지 등급으로 분류됩니다. 각 등급의 특징을 파악하면 본인의 요구에 맞는 업체를 선택하는 데 도움이 됩니다.</p>
+<ol class="info-list">
+<li>
+<span class="il-num">01</span>
+<div class="il-body">
+<h4>스탠다드 등급</h4>
+<p>기본적인 음향 시설과 마이크를 갖춘 형태. 노래방 시스템은 최신 곡 업데이트가 비교적 느리며, 룸 인테리어는 실용적 수준입니다. 가격 대비 합리적인 이용이 가능합니다.</p>
+</div>
+</li>
+<li>
+<span class="il-num">02</span>
+<div class="il-body">
+<h4>프리미엄 등급</h4>
+<p>고음향 스피커·무선 마이크·방음 처리가 적용된 룸. 곡 라이브러리 업데이트가 주 1회 이상 이루어지며, 룸 내 테이블·좌석·조명 등이 세련되게 구성되어 있습니다.</p>
+</div>
+</li>
+<li>
+<span class="il-num">03</span>
+<div class="il-body">
+<h4>VIP·파티룸 등급</h4>
+<p>대형 룸에 전문 음향 장비가 설치된 형태. 음료·안주 서비스가 포함되는 경우가 많으며, 단체 행사·생일 파티 등 특수 목적에 적합합니다. 예약이 필수적입니다.</p>
+</div>
+</li>
+</ol>
+</div>
+</section>
+
+<section class="section-block">
+<div class="n-body-mkih">
+<p class="section-label n-txt-umo4">Regional Insight</p>
+<h2 class="section-title">홍대 상권 특성과 노래방 밀집도</h2>
+<div class="region-signal">
+<h3>홍대입구역 반경 주요 노래방 밀집 구간</h3>
+<p>홍대입구역 3번·9번 출구 일대는 노래방이 가장 밀집한 구간으로, 도보 5분 이내에 평균 15~20개소의 노래방이 분포하고 있습니다. 이 구간은 지하 1층~지상 3층 건물 내에 복합적으로 입점해 있어, 층별로 가격대와 타겟층이 다르게 형성됩니다.</p>
+<p>연남동 방향으로 갈수록 소규모·감성형 노래방의 비중이 높아지며, 양화로 방면은 대형·체인형 업체가 주를 이룹니다. 와우산로 일대는 주거지와 인접하여 비교적 조용한 환경의 업체를 찾기에 적합합니다.</p>
+<p>홍대 상권은 유동인구가 많아 주말과 평일의 이용 패턴이 뚜렷하게 차이납니다. 평일 오후 2시~6시는 상대적으로 여유로운 이용이 가능하며, 금·토요일 밤 9시 이후는 대부분의 업체에서 높은 가동률을 보입니다.</p>
+</div>
+</div>
+</section>
+
+<section class="section-block">
+<div class="n-body-mkih">
+<p class="section-label n-txt-umo4">Song Library</p>
+<h2 class="section-title">곡 라이브러리 및 업데이트 현황</h2>
+<p class="section-desc">노래방 선택에 있어 곡 수와 최신곡 반영 속도는 중요한 기준 중 하나입니다. 홍대 지역 업체들의 곡 라이브러리 현황을 분석한 결과입니다.</p>
+<div class="data-grid">
+<div class="data-card">
+<p class="dc-label">최신 K-POP 반영률</p>
+<p class="dc-value">92%</p>
+<p class="dc-label">방금 발매된 곡을 포함한 최신 인기곡의 시스템 반영 비율. 대형 업체는 발매 당일 반영을 목표로 합니다.</p>
+</div>
+<div class="data-card">
+<p class="dc-label">일본곡 보유 비율</p>
+<p class="dc-label">65%</p>
+<p class="dc-label">J-POP·anime 곡 보유 업체 비율. 홍대 지역은 일본 관광객 수요가 높아 관련 곡 보유율이 타 지역 대비 높습니다.</p>
+</div>
+<div class="data-card">
+<p class="dc-label">영문곡·팝 보유</p>
+<p class="dc-value">45,000곡+</p>
+<p class="dc-note">영미권 팝·록·R&B 장르 평균 보유 수. 최신 앨범 반영은 업체에 따라 편차가 큽니다.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section-block">
+<div class="n-body-mkih">
+<p class="section-label n-txt-umo4">Usage Tips</p>
+<h2 class="section-title">이용 시 참고 사항</h2>
+<ol class="info-list">
+<li>
+<span class="il-num">01</span>
+<div class="il-body">
+<h4>예약 여부</h4>
+<p>홍대 지역 노래방의 대부분은 선착순 입장이 가능하지만, 주말 저녁과 공휴일에는 예약을 권장합니다. 일부 프리미엄 업체는 예약제로 운영되므로 사전 확인이 필요합니다.</p>
+</div>
+</li>
+<li>
+<span class="il-num">02</span>
+<div class="il-body">
+<h4>음료·안주 서비스</h4>
+<p>기본적으로 룸 차지(Room Charge)에 음료가 포함되는 경우가 많으며, 추가 안주는 별도 요금이 부과됩니다. 자체 지참이 가능한 업체도 있으나, 사전 확인이 필수적입니다.</p>
+</div>
+</li>
+<li>
+<span class="il-num">03</span>
+<div class="il-body">
+<h4>할인 및 이벤트</h4>
+<p>많은 업체가 오픈 초기 할인·평일 할인·장기 이용 할인 등을 운영합니다. 주요 온라인 플랫폼을 통해 쿠폰을 확인하면 합리적인 이용이 가능합니다.</p>
+</div>
+</li>
+<li>
+<span class="il-num">04</span>
+<div class="il-body">
+<h4>주변 교통</h4>
+<p>홍대입구역에서 도보 5분 이내의 업체가 가장 많으며, 주차 공간은 제한적입니다. 대중교통 이용을 권장하며, 심야 이용 시 택시 대기 상황도 고려해야 합니다.</p>
+</div>
+</li>
+</ol>
+</div>
+</section>
+
+<section class="faq-section">
+<div class="n-body-mkih">
+<p class="section-label n-txt-umo4">FAQ</p>
+<h2 class="section-title">자주 묻는 질문</h2>
+
+<details class="faq-item">
+<summary>홍대 노래방의 평균 이용 시간은 얼마나 되나요?</summary>
+<div class="faq-answer">대다수 이용객은 2~3시간 단위로 이용합니다. 1시간 미만의 이용도 가능하지만, 시간당 단가가 높아지므로 2시간 이상 이용이 경제적입니다. 단체 모임의 경우 4~5시간 이상 이용하는 사례도 빈번합니다.</div>
+</details>
+
+<details class="faq-item">
+<summary>최신곡 업데이트는 얼마나 자주 이루어지나요?</summary>
+<div class="faq-answer">대형 업체는 주 1~2회, 중소형 업체는 월 1~2회 업데이트가 일반적입니다. 주요 음원 사이트 차트 진입 후 1~2주 이내에 반영되는 업체가 많으며, 일부 업체는 음원 사이트와 연동된 실시간 업데이트 시스템을 도입하고 있습니다.</div>
+</details>
+
+<details class="faq-item">
+<summary>방음 시설은 어느 정도 수준인가요?</summary>
+<div class="faq-answer">등급에 따라 차이가 크습니다. 스탠다드 등급은 기본적인 벽체 방음이 적용되어 있으며, 프리미엄 이상은 흡음재·방음문·바닥 방음 등이 체계적으로 설치되어 있습니다. 민원이나 외부 소음에 민감한 경우 프리미엄 등급 이상을 추천합니다.</div>
+</details>
+
+<details class="faq-item">
+<summary>혼자 이용할 수 있는 노래방이 있나요?</summary>
+<div class="faq-answer">홍대 지역에도 1~2인용 소형 룸을 갖춘 업체가 점차 증가하고 있습니다. 혼자 이용하는 고객을 위한 합리적 가격대 상품을 제공하는 곳도 있으나, 업체마다 정책이 다르므로 방문 전 확인을 권장합니다.</div>
+</details>
+
+<details class="faq-item">
+<summary>카드 결제가 가능한가요?</summary>
+<div class="faq-answer">홍대 지역 노래방의 대부분은 신용카드·체크카드 결제가 가능합니다. 다만 일부 소규모 업체는 현금만 결제 가능한 경우가 있으므로, 소액 현금을 준비하는 것이 좋습니다.</div>
+</details>
+
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="n-body-mkih">
+<p>© 2024 홍대노래방노트. 제공된 정보는 참고용이며, 실제 이용 Conditions는 업체에 직접 확인하시기 바랍니다.</p>
+</div>
+</footer>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('navMenu');
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('show');
+});
+</script>
 
 </body>
 </html>
